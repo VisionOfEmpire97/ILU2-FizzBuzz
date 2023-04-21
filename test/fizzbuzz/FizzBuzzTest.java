@@ -25,6 +25,6 @@ class FizzBuzzTest {
 	
 	@Test
 	void test_fb3() {
-		assertEquals("3",fb.fizzBuzz(3));
+		assertEquals("fizz",fb.fizzBuzz(3));
 	}
 }

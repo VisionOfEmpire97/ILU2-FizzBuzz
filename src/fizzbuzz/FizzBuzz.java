@@ -3,12 +3,12 @@ package fizzbuzz;
 public class FizzBuzz {
 	
 	public static final String UN = "1";
+	public static final String DEUX = "2";
+	public static final String FIZZ = "fizz";
 	
-	public String fizzBuzz(int i) {
-		if (i == 1)
-			return UN;
-		return "2";
-		}
+	public String fizzBuzz(int input) {
+		if (input == 3)
+			return FIZZ;
+		return Integer.toString(input);
 	}
-
 }
