@@ -1,9 +1,11 @@
 package fizzbuzz;
 
 public class FizzBuzz {
-
-	public FizzBuzz() {
-		// TODO Auto-generated constructor stub
+	
+	public static final String UN = "1";
+	
+	public String fizzBuzz(int i) {
+		return UN;
 	}
 
 }
