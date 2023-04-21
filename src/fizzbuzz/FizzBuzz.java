@@ -6,10 +6,13 @@ public class FizzBuzz {
 	private String[] valeursSpeciales = {"fizz","buzz"};
 	
 	public String fizzBuzz(int input) {
+		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < nbSpeciaux.length ; i++) {
 			if (input % nbSpeciaux[i] == 0)
-				return valeursSpeciales[i];
+				sb.append(valeursSpeciales[i]);
 		}
-		return Integer.toString(input);
-	}
+		if (sb.length() == 0)
+			sb.append(Integer.toString(input));
+		return sb.toString();
+		}
 }

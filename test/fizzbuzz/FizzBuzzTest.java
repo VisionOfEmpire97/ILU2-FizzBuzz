@@ -45,7 +45,18 @@ class FizzBuzzTest {
 		assertEquals("fizz",fb.fizzBuzz(13 * 3));
 		assertEquals("buzz",fb.fizzBuzz(13*5));
 		assertEquals("401",fb.fizzBuzz(401));
-		
 	}
 	
+	@Test
+	void test_fb15() {
+		assertEquals("fizzbuzz",fb.fizzBuzz(15));
+	}
+	
+	@Test
+	void test_autre() {
+		assertEquals("fizzbuzz",fb.fizzBuzz(3*5*1276));
+		assertEquals("fizz",fb.fizzBuzz(3*999));
+		assertEquals("1001",fb.fizzBuzz(1001));
+		assertEquals("fizzbuzz", fb.fizzBuzz(555555));
+	}
 }
