@@ -7,7 +7,7 @@ public class FizzBuzz {
 	
 	public String fizzBuzz(int input) {
 		for (int i = 0; i < nbSpeciaux.length ; i++) {
-			if (input == nbSpeciaux[i])
+			if (input % nbSpeciaux[i] == 0)
 				return valeursSpeciales[i];
 		}
 		return Integer.toString(input);
